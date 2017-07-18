@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Virtual Book Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <h1 class="titulo-header">Livraria Virtual</h1>
+        <nav class="menu-header">
+            <a href="index.html"><span class="glyphicon glyphicon-home icone" aria-hidden="true" aria-label="Icone Home"></span></a>
+            <a href="carrinho.html"><span class="glyphicon glyphicon-shopping-cart icone" aria-hidden="true" aria-label="Icone carrinho"></span></a>
+            <a href="relatorio.html"><span class="glyphicon glyphicon-eye-open icone" aria-hidden="true" aria-label="Icone relatorio"></span></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="row">
+                <figure class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/livroAgile.png" alt="Foto Livro Agile">
+                        <div class="caption">
+                            <h3>Agile - André Faria Gomes</h3>
+                            <p>Valor: R$10,00</p>
+                            <input id="qtdeItem1" class="inputQtde" type="number" value="1" min="1">
+                            <button id="botaoComprarItem1" class="btn btn-primary botao-comprar" role="button">Comprar</button>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/livroCssEficiente.png" alt="Livro CSS Eficiente">
+                        <div class="caption">
+                            <h3>CSS Eficiente - Tárcio Zemel</h3>
+                            <p>Valor: R$10,00</p>
+                            <input id="qtdeItem2" class="inputQtde" type="number" value="1" min="1">
+                            <button id="botaoComprarItem2" class="btn btn-primary botao-comprar" role="button">Comprar</button>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/livroGuiaFrontEnd.png" alt="Foto Livro Guia Front-End">
+                        <div class="caption">
+                            <h3>Guia Front-End - Dego Eis</h3>
+                            <p>Valor: R$10,00</p>
+                            <input id="qtdeItem3" class="inputQtde" type="number" value="1" min="1">
+                            <button id="botaoComprarItem3" class="btn btn-primary botao-comprar" role="button">Comprar</button>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                        <img src="images/livroJavaFX.png" alt="Livro Java FX">
+                        <div class="caption">
+                            <h3>Java FX - Bruno Oliveira</h3>
+                            <p>Valor: R$10,00</p>
+                            <input id="qtdeItem4" class="inputQtde" type="number" value="1" min="1">
+                            <button id="botaoComprarItem4" class="btn btn-primary botao-comprar" role="button">Comprar</button>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </main>
+    </div>
+
+    <footer class="panel-footer">
+            <div>
+                 <section class="textoRodapeAutor"><p>&copy; Fernando Octávio de Avellar Jr.</p></section>
+                 <section class="textoRodapeInatel"><p>Projeto Final DM104 / Inatel Pós Mobile 2017</p></section>
+            </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
