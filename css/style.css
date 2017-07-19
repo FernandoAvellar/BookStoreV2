@@ -12,10 +12,10 @@ body {
     width: 100%;
     height: 6em;
 }
-.titulo-header {
+/* .titulo-header {
     margin: 0;
     float:left;
-}
+} */
 /*  .menu-header {
     float: left;
 }  */
@@ -36,10 +36,11 @@ figure h3 {
     font-weight: bold;
 } 
 .panel-footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     color: white;
     background-color: #851944;
     height: 6em;
+    margin-top: 10px;
 }
