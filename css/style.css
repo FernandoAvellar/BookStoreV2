@@ -14,14 +14,30 @@ body {
 }
 .titulo-header {
     position: relative;
-    top:0.5em;
+    top:0.6em;
+    margin: 0;
+    padding-left: 1em;
 } 
-/* .menu-header {
+#iconeHome {
+    width: 50px;
+    height: 50px;
     position: absolute;
-} */
-.icone {
-    color: white;
-    font-size: 3rem;
+    top: 1em;
+    right: 11em;
+}
+#iconeCarrinho {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1em;
+    right: 7em;
+}
+#iconeRelatorio {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1em;
+    right:2em;
 }
 .thumbnail img {
     height: 320px;
@@ -30,8 +46,14 @@ figure {
     padding-top: 1em;
     padding-bottom: 1em;
 }
+.caption {
+    text-align: center;
+}
 figure h3 {
     font-size: 1.2em;
+}
+.valor {
+    font-size: 1.3em;
 }
 .inputQtde {
     width: 20%;
@@ -47,4 +69,16 @@ figure h3 {
     background-color: #851944;
     height: 6em;
     margin-top: 10px;
+}
+@media (max-width: 790px) {
+    .titulo-header {
+        font-size: 2.5em;
+        text-align: left;
+    }
+}
+@media (max-width: 550px) {
+    .titulo-header {
+        font-size: 1.8em;
+        text-align: left;
+    }
 }
