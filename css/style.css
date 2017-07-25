@@ -18,25 +18,19 @@ body {
     margin: 0;
     padding-left: 1em;
 } 
-#iconeHome {
-    width: 50px;
-    height: 50px;
+.icone {
+    width: 45px;
+    height: 45px;
     position: absolute;
-    top: 1em;
+    top: 1.3em;
+}
+#iconeHome {
     right: 11em;
 }
 #iconeCarrinho {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 1em;
     right: 7em;
 }
 #iconeRelatorio {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 1em;
     right:2em;
 }
 .thumbnail img {
@@ -62,23 +56,79 @@ figure h3 {
     font-weight: bold;
 } 
 .panel-footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
     background-color: #851944;
     height: 6em;
-    margin-top: 10px;
+}
+#thumbLivro4 {
+    margin-bottom: 6em;
 }
 @media (max-width: 790px) {
     .titulo-header {
-        font-size: 2.5em;
+        font-size: 2.2em;
         text-align: left;
+        top: 0.8em;
     }
+    .icone {
+        width: 30px;
+        height: 30px;
+        top: 2em;
+    }
+    #iconeHome {
+    right: 9em;
+    }
+    #iconeCarrinho {
+        right: 6em;
+    }
+    #iconeRelatorio {
+        right:3em;
+    }
+    .thumbnail img {
+        height: 220px;
+    }
+    #thumbLivro4 {
+        margin-bottom: 7em;
+    }
+    figure h3 {
+    font-size: 1.0em;
+    }
+    .valor {
+        font-size: 1.1em;
+    }
+    .inputQtde {
+        width: 10%;
+    } 
 }
-@media (max-width: 550px) {
+@media (max-width: 500px) {
     .titulo-header {
-        font-size: 1.8em;
+        font-size: 1.4em;
         text-align: left;
+        top: 1.6em;
+    }
+    .icone {
+        width: 25px;
+        height: 25px;
+        top: 2em;
+    }
+    #iconeHome {
+    right: 9em;
+    }
+    #iconeCarrinho {
+        right: 6em;
+    }
+    #iconeRelatorio {
+        right:3em;
+    }
+    figure h3 {
+    font-size: 0.9em;
+    }
+    .valor {
+        font-size: 1.0em;
+    }
+    .inputQtde {
+        width: 12%;
     }
 }
