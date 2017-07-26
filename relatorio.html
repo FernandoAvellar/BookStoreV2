@@ -13,7 +13,7 @@
 <body>
 
     <header class="page-header">
-        <h1 class="titulo-header text-center">Relatorio de vendas</h1>
+        <h1 class="titulo-header text-center">Relatorio</h1>
         <nav>
             <a href="index.html"> <img id="iconeHome" class="icone" src="images/homePage.png" alt="Foto botao Home"></a>
             <a href="carrinho.html"> <img id="iconeCarrinho" class="icone" src="images/carrinhoCompras.png" alt="Foto icone carrinho de compras"></a>
@@ -25,7 +25,7 @@
         <main>
             <div class="row">
                 <div class="table-responsive">
-                    <table class="table" id="tabelaRelatorio" align='center'>
+                    <table class="table" id="tabelaRelatorio">
                         <tr>
                             <th id="tblData">Data</th>
                             <th id="tblQuantidade">Quantidade</th>
@@ -35,7 +35,7 @@
                     </table>
                 </div>
                 <div class="table-responsive">
-                    <table class="table" id="tabelaValorFinal" align='center'>
+                    <table class="table" id="tabelaValorFinal">
                         <tr>
                             <th id="tblValorFinal">Valor Total das Vendas</th>
                         </tr>
@@ -43,7 +43,7 @@
                 </div>
 
                 <div id="chart_div" align='center'></div>
-                
+
             </div>
         </main>
     </div>
@@ -63,6 +63,8 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/googleChart.js"></script>
+    <script src="js/relatorio.js"></script>
 </body>
 
 </html>

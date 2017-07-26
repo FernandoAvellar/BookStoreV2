@@ -66,6 +66,20 @@ figure h3 {
 #thumbLivro4 {
     margin-bottom: 6em;
 }
+#tabelaRelatorio{
+    margin-bottom: 30px;
+}
+#tabelaValorFinal, #tblValorFinal{
+    margin-bottom: 30px;
+    text-align: center; 
+}
+#chart_div {
+    margin-bottom: 150px;
+}
+#wrapper {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
 @media (max-width: 790px) {
     .titulo-header {
         font-size: 2.2em;
