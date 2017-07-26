@@ -45,7 +45,7 @@ function executaAcaoDoBotaoDeCompra(numeroBotao) {
                 carrinhoCompras.splice(posicaoDoItemNoCurrentDB, 1, itemCarrinho);
                 saveOnLocalDB();
                 limpaEntradaDeDados();
-                window.location.href = "carrinho.html";
+                window.location = "carrinho.html";
             }
             else {
                 carrinhoCompras.push(itemCarrinho);
