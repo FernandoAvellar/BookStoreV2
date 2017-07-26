@@ -51,7 +51,7 @@ function executaAcaoDoBotaoDeCompra(numeroBotao) {
                 carrinhoCompras.push(itemCarrinho);
                 saveOnLocalDB();
                 limpaEntradaDeDados();
-                window.location.href = "carrinho.html";
+                window.location = "carrinho.html";
             }
         }
     }
