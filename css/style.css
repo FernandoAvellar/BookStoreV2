@@ -115,6 +115,9 @@ figure h3 {
     .inputQtde {
         width: 10%;
     } 
+    .btn {
+        padding: 2px 3px;
+    }
 }
 @media (max-width: 500px) {
     .titulo-header {

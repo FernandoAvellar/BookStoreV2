@@ -63,11 +63,11 @@ function drawChart() {
     ]);
 
     var options = {
-        'title': 'Gráfico de venda',
+        'title': 'Gráfico de vendas',
         'width': 500,
         'height': 400,
         'backgroundColor': '#FFFFFF',
-        titleTextStyle: { color: '#851944', fontName: "Arial", fontSize: '20', bold: 'true' }
+        titleTextStyle: { color: '#851944', fontName: "Arial", fontSize: '18', bold: 'true' }
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
