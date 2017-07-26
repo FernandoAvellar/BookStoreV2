@@ -2,7 +2,7 @@
 
 var carrinhoCompras = [];
 var comprasEncerradas = [];
-const botaoConcluirCompra = document.getElementById("botaoConcluirCompra");
+const btnConcluirCompra = document.getElementById("botaoConcluirCompra");
 
 retrieveFromLocalDBCarrinhoCompras();
 retrieveFromLocalDBComprasEncerradas();
@@ -40,7 +40,7 @@ function apagarLinha(row) {
   document.querySelector("table").deleteRow(i);
 }
 
-botaoConcluirCompra.addEventListener("click", function () {
+btnConcluirCompra.addEventListener("click", function () {
   executaAcaoDoBotaoConcluirCompra();
 });
 
