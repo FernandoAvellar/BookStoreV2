@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Relatório de vendas</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <h1 class="titulo-header text-center">Relatorio de vendas</h1>
+        <nav>
+            <a href="index.html"> <img id="iconeHome" class="icone" src="images/homePage.png" alt="Foto botao Home"></a>
+            <a href="carrinho.html"> <img id="iconeCarrinho" class="icone" src="images/carrinhoCompras.png" alt="Foto icone carrinho de compras"></a>
+            <a href="relatorio.html"> <img id="iconeRelatorio" class="icone" src="images/relatorio.png" alt="Foto icone relatorio"></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table" id="tabelaRelatorio" align='center'>
+                        <tr>
+                            <th id="tblData">Data</th>
+                            <th id="tblQuantidade">Quantidade</th>
+                            <th id="tblNome">Nome</th>
+                            <th id="tblTotal">Total</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table-responsive">
+                    <table class="table" id="tabelaValorFinal" align='center'>
+                        <tr>
+                            <th id="tblValorFinal">Valor Total das Vendas</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="chart_div" align='center'></div>
+                
+            </div>
+        </main>
+    </div>
+
+    <footer class="panel-footer">
+        <div>
+            <section class="textoRodapeAutor col-xs-12 col-sm-6 col-md-6">
+                <p>&copy; Fernando Octávio de Avellar Jr.</p>
+            </section>
+            <section class="textoRodapeInatel col-xs-12 col-sm-6 col-md-6 text-right">
+                <p>Projeto Final DM104 / Inatel Pós Mobile 2017</p>
+            </section>
+        </div>
+    </footer>
+
+    <!--Carrega a API externa do Google Charts-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
