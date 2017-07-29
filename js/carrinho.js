@@ -2,6 +2,7 @@
 
 var carrinhoCompras = [];
 var comprasEncerradas = [];
+var valorTotalCarrinho = 0;
 const btnConcluirCompra = document.getElementById("botaoConcluirCompra");
 
 retrieveFromLocalDBCarrinhoCompras();
@@ -9,11 +10,13 @@ retrieveFromLocalDBComprasEncerradas();
 atualizarTabelaDeCompras();
 
 function atualizarTabelaDeCompras() {
+  valorTotalCarrinho = 0;
   if (carrinhoCompras !== null) {
     var i = 0;
     for (i = 0; i < carrinhoCompras.length; i++) {
       insereLinha(i);
     }
+    geraLinhaFinalComValorTotalDoCarrinho();
   }
 }
 
@@ -21,6 +24,7 @@ function insereLinha(itemIndex) {
   let nomeLivro = getNomeLivroUsandoId(carrinhoCompras[itemIndex][0].id);
   let quantidade = carrinhoCompras[itemIndex][0].quantidade;
   let valorTotal = 10 * quantidade;
+  valorTotalCarrinho = valorTotalCarrinho + valorTotal;
   let tabela = document.querySelector("table");
   let novoProduto = "<tr>" +
     "<td>" + quantidade + "</td>" +
@@ -30,6 +34,16 @@ function insereLinha(itemIndex) {
     "</tr>";
 
   tabela.innerHTML = tabela.innerHTML + novoProduto;
+}
+
+function geraLinhaFinalComValorTotalDoCarrinho() {
+  let tabelaFinal = document.querySelector("#tabelaValorFinal");
+
+  let valorFinal = "<tr>" +
+    "<td>" + "R$ " + valorTotalCarrinho + "</td>" +
+    "</tr>";
+
+  tabelaFinal.innerHTML = tabelaFinal.innerHTML + valorFinal;
 }
 
 function apagarLinha(row) {
