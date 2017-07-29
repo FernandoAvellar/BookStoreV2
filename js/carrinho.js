@@ -38,11 +38,9 @@ function insereLinha(itemIndex) {
 
 function geraLinhaFinalComValorTotalDoCarrinho() {
   let tabelaFinal = document.querySelector("#tabelaValorFinal");
-
   let valorFinal = "<tr>" +
     "<td>" + "R$ " + valorTotalCarrinho + "</td>" +
     "</tr>";
-
   tabelaFinal.innerHTML = tabelaFinal.innerHTML + valorFinal;
 }
 
@@ -52,6 +50,8 @@ function apagarLinha(row) {
   deleteFromLocalDB(idLivro);
   let i = row.parentNode.parentNode.rowIndex;
   document.querySelector("table").deleteRow(i);
+  document.querySelector("#tabelaValorFinal").deleteRow(1);
+  location.reload();
 }
 
 btnConcluirCompra.addEventListener("click", function () {
